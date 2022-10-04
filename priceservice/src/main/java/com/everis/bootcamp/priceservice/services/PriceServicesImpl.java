@@ -25,6 +25,7 @@ public class PriceServicesImpl extends BaseService<Prices, Integer, PriceReposit
 	@Override
 	public GetPricesDto create(Prices prices) {
 
+		
 		Prices result = priceRepository.save(Prices.builder()
 				
 				.id(prices.getId())

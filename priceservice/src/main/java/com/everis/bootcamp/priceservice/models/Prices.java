@@ -19,11 +19,11 @@ import lombok.Builder;
 public class Prices {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "ID")
 	private Integer id;
 	
-	@Column(name = "CodeProduct")
+	@Column(name = "CODE_PRODUCT")
 	private String codeProduct;
 	
 	@Column(name = "Description")
